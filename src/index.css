@@ -11,3 +11,80 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#nav{
+  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+  transition: 1s;
+}
+
+#carusel .carousel-inner img{
+  max-height: 90vh;
+  object-fit: cover;
+  filter: grayscale(30%);
+}
+
+#carusel{
+  position: relative;
+}
+
+#carusel .overlay{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#carusel .overlay span{
+  font-size: 51px;
+  font-weight: 600;
+}
+
+#carusel .overlay .container,
+#carusel .overlay .row{
+    height: 100%;
+}
+
+#producto a{
+  background: #85cd4f;
+}
+
+#tech .row img{
+  max-width: 100%;
+  object-fit: cover;
+}
+
+#tech .tech-text{
+  background-color: rgba(0,0,0, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#footer .hojas img{
+  width: 200px;
+}
+
+#footer .piepagina{
+  background: linear-gradient(90deg, #203a43,#2c5364);
+  height: 100px;
+}
+
+#footer .piepagina a{
+  color: white;
+}
+
+#footer .piepagina a:hover{
+  color: grey;
+  text-decoration: none;
+}
+
+@media(max-width: 376px){
+
+  #carusel img{
+    height: 800px;
+  }
+}
